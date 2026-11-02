@@ -1,4 +1,4 @@
-// SupportCopilot: small client helpers (theme toggle, chat UX, examples).
+// Nexa Support: small client helpers (theme toggle, chat UX, examples).
 (function () {
   "use strict";
 

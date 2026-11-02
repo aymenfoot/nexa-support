@@ -29,7 +29,7 @@ templates = Jinja2Templates(directory=str(_HERE / "templates"))
 
 def create_app() -> FastAPI:
     settings = get_settings()
-    app = FastAPI(title="SupportCopilot", version="0.1.0")
+    app = FastAPI(title="Nexa Support", version="0.1.0")
 
     static_dir = _HERE / "static"
     if static_dir.exists():

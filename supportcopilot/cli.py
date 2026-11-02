@@ -40,7 +40,7 @@ def _cmd_roi(args: argparse.Namespace) -> int:
         print(json.dumps(report.as_summary(), indent=2))
         return 0
     s = report
-    print("=== SupportCopilot ROI (replayed on seeded tickets) ===")
+    print("=== Nexa Support ROI (replayed on seeded tickets) ===")
     print(f"Tickets handled:      {s.total_tickets}")
     print(f"Auto-resolved:        {s.auto_resolved} ({s.deflection_rate * 100:.0f}% deflection)")
     print(f"Escalated to human:   {s.escalated} ({s.escalation_rate * 100:.0f}%)")
@@ -53,7 +53,7 @@ def _cmd_roi(args: argparse.Namespace) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="supportcopilot", description="SupportCopilot CLI")
+    parser = argparse.ArgumentParser(prog="supportcopilot", description="Nexa Support CLI")
     sub = parser.add_subparsers(dest="cmd", required=True)
 
     p_ask = sub.add_parser("ask", help="Ask the support copilot a question")
